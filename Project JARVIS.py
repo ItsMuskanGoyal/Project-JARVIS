@@ -155,7 +155,7 @@ if __name__ == "__main__":
             speak("Listen to some cool songs. Or listen to TRS podcast. Watch a cool movie like boss baby. Do a cool party and some dancing. Talk to Mom Dad Sis varsha or Mukul. Talk to Samriddhi, Nancy, Vineet,Sanchita di")
 
         elif 'go to hell' in query:
-            speak("I am sorry that I am not able to uplift your mood. That is my mistake for sure but I know you are not dependent on me for good mood. I apologise for my mistake and limitations. I can suggest you to watch favourite serial, learn something new or talk to MOM, DAD, Mukul, Varsha, samriddhi, nancy, vineet, priya or Sanchita ")
+            speak("I am sorry that I am not able to uplift your mood. That is my mistake for sure but I know you are not dependent on me for good mood. I apologise for my mistake and limitations. I can suggest you to watch favourite serial, learn something new or talk to MOM, DAD, Mukul, Varsha, samriddhi, nancy, priya or Sanchita ")
 
         elif 'productive work' in query:
             speak("Complete javascript tutorial, Scholarship apply ")
@@ -210,7 +210,7 @@ if __name__ == "__main__":
                 speak("I am not able to send")
 
 
-        elif 'quit' in query:
+        elif 'Bye' in query:
             speak("Thanks for Developing me. It will be my pleasure if I am able to help you a bit")
             break
 
