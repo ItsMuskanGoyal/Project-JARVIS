@@ -22,11 +22,11 @@ def wishme():
     hour = int(datetime.datetime.now().hour)
     speak(hour)
     if hour >= 0 and hour<12:
-        speak("Good Morning Ma'am. A good day is waiting for you to wake up")
+        speak("Good Morning. A good day is waiting for you to wake up")
     elif hour>=12 and hour<18:
         speak("Good Afternoon! welcome to second phase of your day." )
     else:
-        speak("Good Evening Maam, Welcome to most productive phase of your day")
+        speak("Good Evening, Welcome to most productive phase of your day")
 
     #speak("I am Jarvis Sir. Tell me how can I help you")
 
@@ -34,8 +34,8 @@ def sendemail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('itsmuskangoyal07@gmail.com', 'Password real')
-    server.sendmail('muskan.22534@gmail.com', to, content)
+    server.login('M', 'Password real')
+    server.sendmail('M', to, content)
     server.close()
 
     
@@ -67,8 +67,8 @@ if __name__ == "__main__":
     wishme()
                 #query= takeCommand().lower()
     while True:
-        query= takeCommand().lower()
-        #query = input("Enter command:- ....   ")
+        #query= takeCommand().lower()
+        query = input("Enter command:- ....   ")
         if 'wikipedia' in query:
             speak('Searching Wikipedia...')
             query = query.replace("wikipedia","")
@@ -210,7 +210,7 @@ if __name__ == "__main__":
                 speak("I am not able to send")
 
 
-        elif 'Bye' in query:
+        elif 'bye' in query:
             speak("Thanks for Developing me. It will be my pleasure if I am able to help you a bit")
             break
 
